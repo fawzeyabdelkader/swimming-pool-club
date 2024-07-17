@@ -12,7 +12,7 @@ export class TestimonialComponent implements OnInit {
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
- 
+
     this.dataService.getTestimonials().subscribe((data) => {
       this.testimonials = data;
     });
@@ -30,8 +30,8 @@ export class TestimonialComponent implements OnInit {
     autoplayHoverPause: true,
     autoplayTimeout: 2000,
     navText: [
-      `<i class="fa-solid fa-angle-left   text-primary fs-2"></i>`,
-      `<i class="fa-solid fa-angle-right   text-primary fs-2"></i>`,
+      `<i class="fa-solid fa-angle-right"></i>`,
+      `<i class="fa-solid fa-angle-left"></i>`,
     ],
     nav: true,
 

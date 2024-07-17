@@ -1,5 +1,3 @@
-
-
 .card-body img {
   width: 50px;
   height: 50px;
@@ -29,36 +27,32 @@
   left: 50px;
 }
 
+.owl-carousel-o {
+  position: relative;
+}
 
-
-
-
-
-
-.owl-carousel .owl-nav {
+::ng-deep .owl-prev,
+::ng-deep .owl-next {
   position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-  padding: 10px;
-  z-index: 1000; /* لتكون الأزرار فوق العناصر الأخرى */
+  bottom: 115%;
+  background-color: #fff !important;
+  padding: 15px !important;
+  color: #004dff !important;
+  border-radius: 50% !important;
+}
+::ng-deep .owl-prev:hover,
+::ng-deep .owl-next:hover {
+  background-color: #004dff !important;
+
+  color: #fff !important;
 }
 
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel .owl-nav button.owl-next {
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 2rem;
-  color: #004dff; /* لون الأيقونات */
-  margin: 0 5px; /* مسافة بين الأزرار */
-  cursor: pointer;
+::ng-deep .owl-prev {
+  left: 95%;
+
+  margin-bottom: 30px;
 }
 
-.owl-carousel .owl-nav button.owl-prev:hover,
-.owl-carousel .owl-nav button.owl-next:hover {
-  color: #ff0000; /* لون الأيقونات عند التمرير */
+::ng-deep .owl-next {
+  right: 5%;
 }
