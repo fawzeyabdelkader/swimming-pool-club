@@ -1,0 +1,126 @@
+<div class="container my-5 w-75 mx-auto py-5">
+  <span class="testimonial-title position-relative fw-bold ms-3">TESTIMONIAL</span>
+  <h2 class="py-3">What Our Customers Say</h2>
+  <p class="text-muted">Wxcepteur sint occaecat cupidatat non proident sunt culpa qui<br />
+    officia deserunt mollit laborum.</p>
+  <div class="row py-5">
+
+    <!-- <div class="col-md-6" *ngFor="let testimonial of testimonials">
+      <div class="card">
+        <div class="card-body testimonial p-4">
+          <div class="d-flex align-items-center pt-2 ms-3">
+            <img class="rounded-circle" [src]="testimonial.image" alt="Client's profile picture">
+            <div class="ms-4">
+              <h5 class="fs-5 m-0 fw-semibold">{{testimonial.name}}</h5>
+              <span class="fs-6 m-0 p-0 text-muted">{{testimonial.title}}</span>
+            </div>
+          </div>
+          <p class="card-text ms-3 text-muted py-3">{{testimonial.comment}}</p>
+          <div class=" w-50 ms-3" >
+            <i class="text-warning fa-solid fa-star"></i>
+            <i class="text-warning fa-solid fa-star"></i>
+            <i class="text-warning fa-solid fa-star"></i>
+            <i class="text-warning fa-solid fa-star"></i>
+            <i class="text-warning fa-solid fa-star"></i>
+            <span class="card-text text-muted ms-3">{{testimonial.rating}} out of 5 stars</span>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <owl-carousel-o [options]="customOptions">
+
+      <ng-container *ngFor="let testimonial of testimonials">
+        <ng-template carouselSlide>
+          <img [src]="testimonial.image" [alt]="testimonial.name" >
+        </ng-template>
+      </ng-container>
+
+    </owl-carousel-o> -->
+    <owl-carousel-o [options]="customOptions">
+
+      <ng-container *ngFor="let testimonial of testimonials">
+        <ng-template carouselSlide class="">
+
+            <div class="card mx-3">
+              <div class="card-body testimonial p-4">
+                <div class="d-flex align-items-center pt-2 ms-3">
+                  <img class="rounded-circle" [src]="testimonial.image" alt="Client's profile picture">
+                  <div class="ms-4">
+                    <h5 class="fs-5 m-0 fw-semibold">{{testimonial.name}}</h5>
+                    <span class="fs-6 m-0 p-0 text-muted">{{testimonial.title}}</span>
+                  </div>
+                </div>
+                <p class="card-text ms-3 text-muted py-3">{{testimonial.comment}}</p>
+                <div class=" w-50 ms-3" >
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <span class="card-text text-muted ms-3">{{testimonial.rating}} out of 5 stars</span>
+                </div>
+              </div>
+            </div>
+
+
+        </ng-template>
+      </ng-container>
+
+    </owl-carousel-o>
+
+
+
+
+    <!-- <div class="col-md-6" *ngFor="let testimonial of testimonials">
+      <div class="card">
+        <div class="card-body testimonial p-4">
+          <div class="d-flex align-items-center pt-2 ms-3">
+            <img class="rounded-circle" [src]="testimonial.image" alt="Client's profile picture">
+            <div class="ms-4">
+              <h5 class="fs-5 m-0 fw-semibold">Jane Doe</h5>
+              <span class="fs-6 m-0 p-0 text-muted">CEO, Example Company</span>
+            </div>
+          </div>
+          <p class="card-text ms-3 text-muted py-3">"Simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the
+            industry's standard dummy text ever since the unknown printer took a galley."</p>
+          <div class=" w-50 ms-3">
+            <i class="text-warning fa-solid fa-star"></i>
+            <i class="text-warning fa-solid fa-star"></i>
+            <i class="text-warning fa-solid fa-star"></i>
+            <i class="text-warning fa-solid fa-star"></i>
+            <i class="text-warning fa-solid fa-star"></i>
+            <span class="card-text text-muted ms-3">5 out of 5 stars</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body testimonial p-4">
+          <div class="d-flex align-items-center pt-2 ms-3">
+            <img class="rounded-circle" src="./assets/team-member.jpg" alt="Client's profile picture">
+            <div class="ms-4">
+              <h5 class="fs-5 m-0 fw-semibold">Leslie Alexander</h5>
+              <span class="fs-6 m-0 p-0 text-muted">Client, SwimClub</span>
+            </div>
+          </div>
+          <p class="card-text ms-3 text-muted py-3">"Simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the
+            industry's standard dummy text ever since the unknown printer took a galley."</p>
+          <div class=" w-50 ms-3">
+            <i class="text-warning fa-solid fa-star"></i>
+            <i class="text-warning fa-solid fa-star"></i>
+            <i class="text-warning fa-solid fa-star"></i>
+            <i class="text-warning fa-solid fa-star"></i>
+            <i class="text-warning fa-solid fa-star-half-stroke"></i>
+            <span class="card-text text-muted ms-3">4.5 out of 5 stars</span>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+</div>

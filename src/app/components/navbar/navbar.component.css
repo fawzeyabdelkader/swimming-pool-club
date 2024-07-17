@@ -1,0 +1,57 @@
+ .Active{
+  border-bottom: 3px solid blue ;
+     }
+     .wavy{
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+    }
+    .wavy-circle::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+       border: 3px solid #000;
+      bottom:50px;
+      left: 50%;
+       width: 20px;
+      height: 20px;
+    }
+    .wavy-circle::before {
+      content: '';
+      position: absolute;
+       border: 3px solid #004dff;
+      bottom:100%;
+      left: 10%;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+     }
+
+
+
+
+
+
+     .icon-container {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+
+    }
+
+    .icon-container::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      bottom: 0;
+      left: 30px;
+      width: 25px;
+      height: 25px;
+      background-color:rgb(0,0,0,0.2);
+      border-radius: 50%;
+      z-index: -1;
+    }
+

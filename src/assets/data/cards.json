@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "image": "./assets/8.jpg",
+    "price": "$100.40",
+      "title": "Sea Turtles",
+      "years": "3-4",
+      "comment":"Contrary to popular belief, loreipsum is not simply random desktop",
+      "enrolled": "28",
+      "lessons": "13"
+  },
+  {
+    "id": 2,
+    "image": "./assets/9.jpg",
+    "price": "$800.55",
+      "title": "Sharks",
+      "years": "4-12",
+      "comment":"Contrary to popular belief, loreipsum is not simply random desktop",
+      "enrolled": "10",
+      "lessons": "38"
+  },
+  {
+    "id": 3,
+    "image": "./assets/6.jpg",
+    "price": "$200.20",
+      "title": "Swimmers",
+      "years": "7-14",
+      "comment":"Contrary to popular belief, loreipsum is not simply random desktop",
+      "enrolled": "21",
+      "lessons": "17"
+  },
+  {
+    "id": 4,
+    "image": "./assets/5.jpg",
+    "price": "$500.30",
+      "title": "Deep Aqua Aerobics",
+      "years": "12-25",
+      "comment":"Contrary to popular belief, loreipsum is not simply random desktop",
+      "enrolled": "33",
+      "lessons": "27"
+  },
+  {
+    "id": 5,
+    "image": "./assets/12.jpg",
+    "price": "$700.99",
+      "title": "Intermediate Swimmer",
+      "years": "25-30",
+      "comment":"Contrary to popular belief, loreipsum is not simply random desktop",
+      "enrolled": "40",
+      "lessons": "17"
+  },
+  {
+    "id": 6,
+    "image": "./assets/13.jpg",
+    "price": "$800.55",
+      "title": "Intermediate Swimmer",
+      "years": "25-46",
+      "comment":"Contrary to popular belief, loreipsum is not simply random desktop",
+      "enrolled": "12",
+      "lessons": "37"
+  }
+
+]

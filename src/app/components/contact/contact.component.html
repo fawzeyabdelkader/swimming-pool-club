@@ -1,0 +1,213 @@
+<!-- ^**************** header ************ -->
+<header>
+  <div class="clint-header">
+    <div class="text-white  header-body  text-center d-flex justify-content-center align-items-center ">
+      <div class="">
+        <h3 class="fw-bold">GET IN TOUCH</h3>
+        <span class="">HOME >> </span>
+        <span class="ms-2 text-decoration-none">CONTACT US</span>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<!-- ^**************** CONTACT ************ -->
+ <div class="container py-5 w-75 mx-auto">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="pt-3">
+        <div class="d-flex">
+          <div class="bg-primary d-flex justify-content-center align-items-center rounded-3 icon-container"
+            style="width: 60px; height: 60px;">
+            <i class="fa-solid fa-location-dot text-white fs-2"></i>
+          </div>
+          <div class="ms-3">
+            <span class="fw-bold fs-5">Office Address</span>
+            <p class="text-secondary m-0 mt-2">451 7 washington manchester,</p>
+              <p class="text-secondary m-0 ">kentucky 39495</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="pt-3">
+        <div class="d-flex">
+          <div class="bg-primary d-flex justify-content-center align-items-center rounded-3 icon-container"
+            style="width: 60px; height: 60px;">
+            <i class="fa-solid fa-phone text-white fs-2"></i>
+          </div>
+          <div class="ms-3">
+            <span class="fw-bold fs-5">Phone Number</span>
+            <p class="text-secondary m-0 mt-2">OUO • 5555 • 888b</p>
+            <p class="text-secondary m-0 ">000 - 6666 • 9999</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="pt-3">
+        <div class="d-flex">
+          <div class="bg-primary d-flex justify-content-center align-items-center rounded-3 icon-container"
+            style="width: 60px; height: 60px;">
+            <i class="fa-solid fa-envelope text-white fs-2"></i>
+          </div>
+          <div class="ms-3">
+            <span class="fw-bold fs-5">Email Address</span>
+            <p class="text-secondary m-0 mt-2">dem0120@gmail.com</p>
+            <p class="text-secondary m-0">test123@gmail.com</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+
+
+ <!-- ^**************** SEND YOUR MESSAGE ************ -->
+
+ <div class="container pt-5">
+  <div class="row">
+
+    <div class="col-md-6 m-0 p-0">
+      <div class="pt-3 translate container">
+        <h2 class="message-title mb-5 ms-3">Send Your Message</h2>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-4">
+                <input type="text" formControlName="name" class="form-control" id="name" placeholder="Your Name" [ngClass]="{'is-invalid': submitted && formControls.name.errors}">
+                <div *ngIf="submitted && formControls.name.errors" class="invalid-feedback">
+                  <div *ngIf="formControls.name.errors.required">Name is required</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-4">
+                <input type="email" formControlName="email" class="form-control" id="email" placeholder="Your Email" [ngClass]="{'is-invalid': submitted && formControls.email.errors}">
+                <div *ngIf="submitted && formControls.email.errors" class="invalid-feedback">
+                  <div *ngIf="formControls.email.errors.required">Email is required</div>
+                  <div *ngIf="formControls.email.errors.email">Email must be valid</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <select class="form-control" formControlName="subject" id="choices" [ngClass]="{'is-invalid': submitted && formControls.subject.errors}">
+              <option value="">Choose Subject</option>
+              <option value="option1">Choose 1</option>
+              <option value="option2">Choose 2</option>
+              <option value="option3">Choose 3</option>
+            </select>
+            <div *ngIf="submitted && formControls.subject.errors" class="invalid-feedback">
+              <div *ngIf="formControls.subject.errors.required">Subject is required</div>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <textarea class="form-control" formControlName="message" id="message" rows="5" placeholder="Type Message" [ngClass]="{'is-invalid': submitted && formControls.message.errors}"></textarea>
+            <div *ngIf="submitted && formControls.message.errors" class="invalid-feedback">
+              <div *ngIf="formControls.message.errors.required">Message is required</div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary px-4 py-3 mb-3 rounded-pill">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+  <div class="col-md-6 m-0 p-0">
+    <div class="">
+      <img class="w-100" src="./assets/mid-shot-swimmer.jpg" alt="">
+    </div>
+  </div>
+ </div>
+ </div>
+
+
+
+ <!-- ^**************** location ************ -->
+
+ <div class="py-5 location-icon">
+
+  <div class="container row iframe-container w-75 mx-auto d-flex justify-content-center align-items-center">
+    <div class="embed-responsive embed-responsive-16by9">
+       <iframe
+           class="embed-responsive-item mx-auto rounded "
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0198341944155!2d144.96332051531696!3d-37.81229847975243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf4c8dbf9cdb09b0!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1602855376357!5m2!1sen!2sau"
+           width="950"
+           height="300"
+           style="border:0;"
+           allowfullscreen=""
+           aria-hidden="false"
+           tabindex="0">
+       </iframe>
+   </div>
+   <div class="row mt-5 mx-auto">
+    <div class="col-md-4">
+      <div class="pt-3">
+        <div class="d-flex">
+          <div class="bg-primary d-flex justify-content-center align-items-center rounded-3 icon-container"
+            style="width: 60px; height: 60px;">
+            <i class="fa-solid fa-location-dot text-white fs-2"></i>
+          </div>
+          <div class="ms-3">
+            <span class="fw-bold fs-5 text-white">Loandon</span>
+            <p class="text-secondary m-0 mt-2">451 7 washington manchester,</p>
+              <p class="text-secondary m-0 ">kentucky 39495</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="pt-3">
+        <div class="d-flex">
+          <div class="bg-primary d-flex justify-content-center align-items-center rounded-3 icon-container"
+            style="width: 60px; height: 60px;">
+            <i class="fa-solid fa-location-dot text-white fs-2"></i>
+          </div>
+          <div class="ms-3">
+            <span class="fw-bold fs-5 text-white">Mosco</span>
+            <p class="text-secondary m-0 mt-2">451 7 washington manchester,</p>
+              <p class="text-secondary m-0 ">kentucky 39495</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="pt-3">
+        <div class="d-flex">
+          <div class="bg-primary d-flex justify-content-center align-items-center rounded-3 icon-container"
+            style="width: 60px; height: 60px;">
+            <i class="fa-solid fa-location-dot text-white fs-2"></i>
+          </div>
+          <div class="ms-3">
+            <span class="fw-bold fs-5 text-white">Paris</span>
+            <p class="text-secondary m-0 mt-2">451 7 washington manchester,</p>
+              <p class="text-secondary m-0 ">kentucky 39495</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+
+ </div>
+
+
+ <!-- ^**************** Contact Logos ************ -->
+  <div class="Contact-logos">
+
+  </div>
+
+
+
+

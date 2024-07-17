@@ -1,0 +1,114 @@
+/*^* ******** Header start */
+.clint-header {
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/About.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.header-body{
+  height: 50vh;
+}
+.header-body span{
+  cursor: pointer;
+ }
+/*^* ******** Header End */
+
+
+
+
+/*^* ******** courses start */
+
+.titele-our::before {
+  content: "";
+  position: absolute;
+  top: 10;
+  bottom: 2px;
+  left: -15px;
+  width: 5px;
+  height: 80%;
+  background: rgba(0, 77, 255, 255);
+}
+.titele-our::after {
+  content: "";
+  position: absolute;
+  top: 10;
+  bottom: 2px;
+  right: -15px;
+  width: 5px;
+  height: 80%;
+  background: rgba(0, 77, 255, 255);
+}
+
+.title-description {
+  font-size: 14px;
+}
+
+.price-tag {
+  top: 180px;
+  left: 0px;
+  background-color: #fff;
+}
+
+.price-tag span {
+  color: #000;
+  font-weight: normal;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.footer-item::after {
+  content: "";
+  position: absolute;
+  top: 10;
+  bottom: 2px;
+  right: -20px;
+  width: 2px;
+  height: 100%;
+  background: #888;
+}
+
+
+.before-search {
+  position: relative;
+}
+.before-search::before {
+  content: "";
+  position: absolute;
+  top: 10;
+  bottom: 2px;
+  left: 2px;
+  width: 5px;
+  height: 80%;
+  background: rgba(0, 77, 255, 255);
+}
+
+
+.before-categories {
+  position: relative;
+}
+.before-categories::before {
+  content: "";
+  position: absolute;
+  top: 10;
+  bottom: 2px;
+  left: -8px;
+  width: 5px;
+  height: 80%;
+  background: rgba(0, 77, 255, 255);
+}
+
+/*^* ******** courses End */

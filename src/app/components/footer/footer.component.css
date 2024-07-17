@@ -1,0 +1,83 @@
+footer{
+  background-color: rgba(0,15,51,255);
+}
+.wavy{
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+.wavy-circle::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+   border: 3px solid #888;
+  bottom:50px;
+  left: 60%;
+   width: 20px;
+  height: 20px;
+}
+.wavy-circle::before {
+  content: '';
+  position: absolute;
+   border: 3px solid #004dff;
+  bottom:100%;
+  left: 10%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+ }
+
+
+
+
+
+h5 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+ }
+
+h5::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 20%;
+  height: 2px;
+  background:rgba(0,77,255,255);
+  left: 0;
+}
+
+h5::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  height: 2px;
+  background: #000;
+  right: 0;
+}
+
+.icon{
+  width: 40px;
+  height: 40px;
+  background-color:rgba(20,34,67,255);
+  transition: all 0.2s ease-in;
+}
+.icon:hover{
+  background-color:rgba(0,77,255,255); ;
+}
+
+.Copyright{
+  background-color:rgba(13,27,61,255);
+}
+footer input{
+  background-color:rgba(20,34,67,255) !important;
+}
+.form-control::placeholder {
+  color: rgba(214, 203, 203, 0.292);
+}
+
+
+
+
+
