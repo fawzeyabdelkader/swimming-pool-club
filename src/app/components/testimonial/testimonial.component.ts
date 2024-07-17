@@ -12,9 +12,7 @@ export class TestimonialComponent implements OnInit {
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    // this.dataService.getCards().subscribe(data => {
-    //   this.cards = data;
-    // });
+ 
     this.dataService.getTestimonials().subscribe((data) => {
       this.testimonials = data;
     });
@@ -24,39 +22,23 @@ export class TestimonialComponent implements OnInit {
     loop: true,
     mouseDrag: true,
     touchDrag: true,
-    pullDrag: false,
-    dots: true,
+    pullDrag: true,
+    dots: false,
     navSpeed: 700,
-    items:2,
-     autoplay:true,
-    autoplayHoverPause:true,
-    autoplayTimeout:2000,
-
-  }
-  // customOptions: OwlOptions = {
-  //   loop: true,
-  //   mouseDrag: false,
-  //   touchDrag: true,
-  //   pullDrag: true,
-  //   dots: false,
-  //   navSpeed: 700,
-  //   navText: ['&#8249;', '&#8250;'],
-  //   responsive: {
-  //     0: {
-  //       items: 1
-  //     },
-  //     400: {
-  //       items: 2
-  //     },
-  //     740: {
-  //       items: 3
-  //     },
-  //     940: {
-  //       items: 4
-  //     }
-  //   },
-  //   nav: true
-  // };
+    items: 2,
+    autoplay: true,
+    autoplayHoverPause: true,
+    autoplayTimeout: 2000,
+    navText: [
+      `<i class="fa-solid fa-angle-left   text-primary fs-2"></i>`,
+      `<i class="fa-solid fa-angle-right   text-primary fs-2"></i>`,
+    ],
+    nav: true,
 
 
+  };
 }
+
+
+
+

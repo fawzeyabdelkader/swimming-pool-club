@@ -12,7 +12,7 @@
     "name": "Esther Howard",
     "title":"CEO, Example Company",
     "comment": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the unknown printer took a galley.",
-    "rating": 4.5,
+    "rating": 5.0,
     "image": "./assets/CEO.jpg"
 },
 {
@@ -20,13 +20,14 @@
   "name": "Esther Howard",
   "title":"CEO, Example Company",
   "comment": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the unknown printer took a galley.",
-  "rating": 4.5,
+  "rating": 5.0,
   "image": "./assets/team-member.jpg"
 }
 ,
   {
       "id": 4,
       "name": "Leslie Alexander",
+      "title":"CEO, Example Company",
       "comment": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the unknown printer took a galley.",
       "rating": 5.0,
       "image": "./assets/CEO.jpg"
@@ -34,6 +35,7 @@
 ,
   {
       "id": 5,
+      "name": "Esther Howard",
       "title":"CEO, Example Company",
       "comment": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the unknown printer took a galley.",
       "rating": 5.0,
@@ -43,6 +45,7 @@
   {
       "id": 6,
       "name": "Leslie Alexander",
+      "title":"CEO, Example Company",
       "comment": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the unknown printer took a galley.",
       "rating": 5.0,
       "image": "./assets/CEO.jpg"

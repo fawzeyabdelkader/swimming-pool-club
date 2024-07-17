@@ -28,3 +28,37 @@
   transform: translate(-15px, -15px);
   left: 50px;
 }
+
+
+
+
+
+
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px;
+  z-index: 1000; /* لتكون الأزرار فوق العناصر الأخرى */
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  color: #004dff; /* لون الأيقونات */
+  margin: 0 5px; /* مسافة بين الأزرار */
+  cursor: pointer;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+  color: #ff0000; /* لون الأيقونات عند التمرير */
+}
